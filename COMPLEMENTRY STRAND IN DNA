@@ -23,3 +23,31 @@ int main() {
 	}
 	return 0;
 }
+
+//Using char
+#include <iostream>
+using namespace std;
+
+int main() {
+	short T,N;   //short datatype used for small integers.
+	cin>>T;
+	while(T--)
+	{
+	    cin>>N;
+	    char a[N];
+	    cin>>a;
+	    for(short i=0;i<N;i++)
+	    {
+	        if(a[i]=='A')
+	        a[i]='T';
+	        else if(a[i]=='T')
+	        a[i]='A';
+	        else if(a[i]=='G')
+	        a[i]='C';
+	        else
+	        a[i]='G';
+	    }
+	    cout<<a<<endl;
+	}
+	return 0;
+}
