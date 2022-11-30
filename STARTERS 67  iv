@@ -1,0 +1,21 @@
+//Expensive Steps
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,a,b,x,y;
+	    cin>>n>>a>>b>>x>>y;
+	    int m= min(a,n-a+1);
+	    int r= min(b,n-b+1);
+	    int o= min(x,n-x+1);
+	    int p= min(y,n-y+1);
+	    //print the output
+	    cout<<min(abs(x-a)+abs(y-b),min(o,p)+min(m,r))<<endl;
+	}
+	return 0;
+}
