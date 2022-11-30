@@ -1,0 +1,18 @@
+//Minimum number of ones
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a;
+	    cin>>a;
+	    int res=a/2;
+	    cout<<res<<endl;
+	 
+	}
+	return 0;
+}
